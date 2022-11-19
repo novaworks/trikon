@@ -1,0 +1,36 @@
+.kitify-tabs-style-trikon-1 {
+  .kitify-tabs__control {
+    .kitify-tabs__label-text {
+      position: relative;
+      font-size: rem-calc(20);
+      line-height: rem-calc(50);
+    }
+    &:hover,
+    &.active-tab {
+      .kitify-tabs__label-text {
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 50%;
+          background-color: v(site-border-color);
+          width: 20px;
+          height: 3px;
+          transform: translateX(-50%);
+          @include breakpoint(992px down) {
+            display: none;
+          }
+        }
+          @include breakpoint(992px down) {
+            position: static;
+          }
+      }
+    }
+  }
+  &.kitify-tabs-position-top .kitify-tabs__content-wrapper {
+     .kitify-tabs__content {
+       padding-top: rem-calc(40);
+     }
+  }
+}
