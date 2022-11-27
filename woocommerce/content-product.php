@@ -14,8 +14,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 if(wc_get_loop_prop('grid_style',1) == 2) {
 	wc_get_template( 'content-product-style_02.php' );
-}elseif(wc_get_loop_prop('grid_style',1) == 3) {
-	wc_get_template( 'content-product-style_02.php' );
 }else {
 	wc_get_template( 'content-product-default.php' );
 }

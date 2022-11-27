@@ -49,8 +49,8 @@ Kirki::add_config( 'trikon', array(
 function nova_custom_fonts_to_kirki( $fonts ) {
 
         $fonts["system-font"] = array(
-        "label" => "Cerebri Sans",
-        "stack" => "Cerebri Sans",
+        "label" => "NewYork",
+        "stack" => "NewYork",
         );
         return $fonts;
 }

@@ -35,7 +35,6 @@ add_action( 'nova_loop_thumbnail', 'woocommerce_template_loop_stock', 10);
 add_action( 'woocommerce_shop_loop_wishlist', 'add_wishlist_icon_in_product_card', 10);
 
 // woocommerce_shop_loop_quick_view
-remove_action( 'woocommerce_shop_loop_quick_view', 'nova_product_quick_view_button_v2', 10 );
 add_action( 'woocommerce_shop_loop_quick_view', 'nova_product_quick_view_button', 10 );
 
 // woocommerce_shop_loop_add_to_cart

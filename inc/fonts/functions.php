@@ -6,7 +6,6 @@ add_filter( 'novathemes_fonts_choices','nova_kirki_fonts_choices' );
 function nova_kirki_fonts_choices( $settings = [] ) {
 
 	$fonts_list = apply_filters( 'novathemes_fonts_list', [] );
-
 	if ( ! $fonts_list ) {
 		return $settings;
 	}
@@ -22,3 +21,15 @@ function nova_kirki_fonts_choices( $settings = [] ) {
 	$fonts_settings = array_merge( (array) $fonts_settings, (array) $settings );
 	return $fonts_settings;
 }
+// print_r(apply_filters(
+// 	'novathemes_fonts_choices', [
+// 		'variant' => [
+// 			'300',
+// 			'400',
+// 			'500',
+// 			'600',
+// 			'700',
+// 		]
+// 	]
+// ));
+// die();

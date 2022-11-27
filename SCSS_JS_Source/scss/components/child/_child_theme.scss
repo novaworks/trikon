@@ -2,12 +2,21 @@ body:not(.body-completely-loaded) {
   .off-canvas-wrapper,
   .elementor-kitify-nova-menu,
   .sub-menu,
-  .kitify-nav__sub,
+  .elementor-kitify-nav-menu,
   .kitify-nova-menu__mobile-trigger,
+  .count-badge,
+  .count-text,
+  img.kitify-logo__img.kitify-logo-light,
   .elementor-location-footer {
     content-visibility: hidden;
     margin: 0;
     padding: 0;
+  }
+  .kitify-logo {
+    display: flex;
+  }
+  .kitify-logo__link {
+    display: flex;
   }
 }
 @media(max-width: 882px){

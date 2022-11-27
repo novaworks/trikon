@@ -45,7 +45,7 @@ Kirki::add_field( 'trikon', array(
     'settings'    => 'main_menu_accent_color',
     'label'       => esc_html__( 'Accent Color', 'trikon' ),
     'section'     => $section,
-    'default'     => '#6F4A32',
+    'default'     => '#000000',
     'priority'    => 10,
 
 ) );

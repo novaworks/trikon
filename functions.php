@@ -1,5 +1,5 @@
 <?php
-// define( 'NOVA_DEBUG', false );
+// define( 'NOVA_DEBUG', true );
 // Vendors
 require_once( get_template_directory() . '/functions/admin-setup.php' );
 
@@ -30,12 +30,12 @@ if ( NOVA_RWMB_IS_ACTIVE ) {
 require_once( get_template_directory() . '/functions/metabox.php' );
 }
 // Customiser
+require_once( get_template_directory() . '/inc/fonts/AddCustomFonts.php' );
+require_once( get_template_directory() . '/inc/fonts/functions.php' );
 require_once( get_template_directory() . '/inc/customizer/frontend.php' );
 require_once( get_template_directory() . '/inc/customizer/backend.php' );
 require_once( get_template_directory() . '/inc/customizer/styles.php' );
 require_once( get_template_directory() . '/inc/customizer/read_options.php' );
-require_once( get_template_directory() . '/inc/fonts/AddCustomFonts.php' );
-require_once( get_template_directory() . '/inc/fonts/functions.php' );
 
 // Theme Setup
 require_once( get_template_directory() . '/functions/menu-walkers.php' );

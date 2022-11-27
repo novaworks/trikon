@@ -14,7 +14,7 @@ remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_prod
 
 // woocommerce_after_shop_loop_item_title
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
-add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 15);
+add_action( 'nova_product_item_top_actions', 'woocommerce_template_loop_rating', 15);
 
 // woocommerce_after_shop_loop_item
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
@@ -35,8 +35,7 @@ add_action( 'nova_loop_thumbnail', 'woocommerce_template_loop_stock', 10);
 add_action( 'woocommerce_shop_loop_wishlist', 'add_wishlist_icon_in_product_card', 10);
 
 // woocommerce_shop_loop_quick_view
-remove_action( 'woocommerce_shop_loop_quick_view', 'nova_product_quick_view_button', 10 );
-add_action( 'woocommerce_shop_loop_quick_view', 'nova_product_quick_view_button_v2', 10 );
+add_action( 'woocommerce_shop_loop_quick_view', 'nova_product_quick_view_button', 10 );
 
 // woocommerce_shop_loop_add_to_cart
 add_action( 'woocommerce_shop_loop_add_to_cart', 'woocommerce_template_loop_add_to_cart', 10 );
@@ -57,11 +56,14 @@ $class = array('product_item', 'product-grid-item', 'product');
 						<a class="product-item-link" href="<?php echo get_the_permalink() ?>"></a>
 						<div class="product-item__description--actions">
 							<?php
+							if( 1 ==  Nova_OP::getOption('shop_product_wishlist_button') ):
+								do_action( 'woocommerce_shop_loop_wishlist' );
+							endif;
 							if( 1 ==  Nova_OP::getOption('shop_product_addtocart_button') ):
 								do_action( 'woocommerce_shop_loop_add_to_cart' );
 							endif;
-							if( 1 ==  Nova_OP::getOption('shop_product_wishlist_button') ):
-								do_action( 'woocommerce_shop_loop_wishlist' );
+							if( 1 ==  Nova_OP::getOption('shop_product_quickview_button') ):
+								do_action( 'woocommerce_shop_loop_quick_view' );
 							endif;
 							?>
 						</div>
@@ -69,14 +71,12 @@ $class = array('product_item', 'product-grid-item', 'product');
 			<div class="product-item__badges">
 				<?php do_action( 'woocommerce_product_badges' ); ?>
 			</div>
-			<?php do_action('nova_loop_thumbnail_start'); ?>
 			<div class="product-item__description-top-actions">
 				<?php
-				if( 1 ==  Nova_OP::getOption('shop_product_quickview_button') ):
-					do_action( 'woocommerce_shop_loop_quick_view' );
-				endif;
+					do_action( 'nova_product_item_top_actions' );
 				?>
 			</div>
+			<?php do_action('nova_loop_thumbnail_start'); ?>
 				<a href="<?php echo get_the_permalink() ?>">
 					<?php do_action('nova_loop_thumbnail'); ?>
 				</a>

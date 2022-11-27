@@ -13,14 +13,6 @@ Kirki::add_field( 'trikon', array(
 
 ) );
 
-// ---------------------------------------------
-Kirki::add_field( 'trikon', array(
-    'type'        => 'separator',
-    'settings'    => 'separator_'. $sep_id++,
-    'section'     => $section,
-
-) );
-// ---------------------------------------------
 
 Kirki::add_field( 'trikon', array(
     'type'        => 'image',
@@ -31,15 +23,6 @@ Kirki::add_field( 'trikon', array(
     'priority'    => 10,
 
 ) );
-
-// ---------------------------------------------
-Kirki::add_field( 'trikon', array(
-    'type'        => 'separator',
-    'settings'    => 'separator_'. $sep_id++,
-    'section'     => $section,
-
-) );
-// ---------------------------------------------
 
 
 Kirki::add_field( 'trikon', array(
@@ -57,21 +40,12 @@ Kirki::add_field( 'trikon', array(
 
 ) );
 
-// ---------------------------------------------
-Kirki::add_field( 'trikon', array(
-    'type'        => 'separator',
-    'settings'    => 'separator_'. $sep_id++,
-    'section'     => $section,
-
-) );
-// ---------------------------------------------
-
 Kirki::add_field( 'trikon', array(
     'type'        => 'image',
     'settings'    => 'header_alt_logo',
     'label'       => esc_html__( 'Alternative Logo', 'trikon' ),
     'section'     => $section,
-    'default'     => get_template_directory_uri() . '/images/alternative_logo.svg',
+    'default'     => get_template_directory_uri() . '/assets/images/alternative_logo.svg',
     'priority'    => 10,
 
 ) );

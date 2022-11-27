@@ -103,9 +103,8 @@ add_filter('kitify/products/control/grid_style', 'trikon_kitify_add_product_grid
 if(!function_exists('trikon_kitify_add_product_grid_style')){
     function trikon_kitify_add_product_grid_style(){
         return [
-            '2' => esc_html__('Trikon Style', 'trikon'),
-            '3' => esc_html__('Trikon Furniture Style', 'trikon'),
             '1' => esc_html__('Default', 'trikon'),
+            '2' => esc_html__('Trikon Style', 'trikon'),
         ];
     }
 }

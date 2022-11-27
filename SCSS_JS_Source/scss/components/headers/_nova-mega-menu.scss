@@ -146,7 +146,6 @@
 }
 .main-navigation > ul > li.current-menu-item {
 	> a {
-		font-weight: 600;
 		color: v(site-main-menu-accent-color);
 	}
 }
@@ -184,9 +183,6 @@
 			transform-origin: left;
 		}
 	}
-}
-.main-navigation a i {
-	margin-right: 5px;
 }
 
 .text-light .main-navigation a {

@@ -41,7 +41,7 @@ Kirki::add_field( 'trikon', array(
     'settings'    => 'secondary_color',
     'label'       => esc_html__( 'Secondary Font Color', 'trikon' ),
     'section'     => $section,
-    'default'     => '#212121',
+    'default'     => '#222222',
     'priority'    => 10,
 ) );
 
@@ -58,7 +58,7 @@ Kirki::add_field( 'trikon', array(
     'settings'    => 'accent_color',
     'label'       => esc_html__( 'Accent Color', 'trikon' ),
     'section'     => $section,
-    'default'     => '#6F4A32',
+    'default'     => '#000000',
     'priority'    => 10,
 ) );
 
@@ -110,7 +110,7 @@ Kirki::add_field( 'trikon', array(
     'settings'    => 'site_link_color',
     'label'       => esc_html__( 'Link Color', 'trikon' ),
     'section'     => $section,
-    'default'     => '#212121',
+    'default'     => '#222222',
     'priority'    => 10,
 ) );
 // ---------------------------------------------
@@ -126,7 +126,7 @@ Kirki::add_field( 'trikon', array(
     'settings'    => 'site_link_hover_color',
     'label'       => esc_html__( 'Link Hover Color', 'trikon' ),
     'section'     => $section,
-    'default'     => '#6F4A32',
+    'default'     => '#000000',
     'priority'    => 10,
 ) );
 // ---------------------------------------------
@@ -142,7 +142,7 @@ Kirki::add_field( 'trikon', array(
     'settings'    => 'primary_button_color',
     'label'       => esc_html__( 'Primary Button Color', 'trikon' ),
     'section'     => $section,
-    'default'     => '#6F4A32',
+    'default'     => '#000000',
     'priority'    => 10,
 ) );
 // ---------------------------------------------
@@ -158,7 +158,7 @@ Kirki::add_field( 'trikon', array(
     'settings'    => 'secondary_button_color',
     'label'       => esc_html__( 'Secondary Button Color', 'trikon' ),
     'section'     => $section,
-    'default'     => '#212121',
+    'default'     => '#222222',
     'priority'    => 10,
 ) );
 // ---------------------------------------------

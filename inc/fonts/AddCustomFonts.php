@@ -33,39 +33,7 @@ if ( ! class_exists( 'NovaThemesAddCustomFonts' ) ) {
 		 * Init hooks
 		 */
 		public function init_hooks() {
-			add_filter( 'novathemes_fonts_list', [ $this, 'custom_fonts' ], 20 );
 			add_filter( 'novathemes_fonts_list', [ $this, 'typekit_fonts' ], 20 );
-		}
-
-		/**
-		 * Custom fonts
-		 */
-		public function custom_fonts( $fonts ) {
-
-			$custom_fonts = get_option( 'novathemes-custom-fonts' );
-
-			if ( ! empty( $custom_fonts ) ) {
-
-				$fonts[ 'families' ][ 'custom_fonts' ] = array(
-					'text' => esc_html__( 'Custom Fonts', 'novathemes' ),
-					'children' => []
-				);
-
-				foreach( $custom_fonts as $font => $key ) {
-
-					$fonts[ 'families' ][ 'custom_fonts' ][ 'children' ][] = [
-						'id' => $font,
-						'text' => $font
-					];
-
-					$fonts[ 'variants' ][ $font ] = [ '100', '200', '300', '400', '500', '600', '700', '800', '900' ];
-
-				}
-
-			}
-
-			return $fonts;
-
 		}
 
 		/**
@@ -74,13 +42,13 @@ if ( ! class_exists( 'NovaThemesAddCustomFonts' ) ) {
 		public function typekit_fonts( $fonts ) {
 
 			$typekit_fonts = get_option( 'kitify-typekit-fonts' )[ 'custom-typekit-font-details' ];
+
 			if ( ! empty( $typekit_fonts ) ) {
 
 				$fonts[ 'families' ][ 'typekit_fonts' ] = array(
 					'text' => esc_html__( 'TypeKit Fonts', 'trikon' ),
 					'children' => []
 				);
-
 				foreach( $typekit_fonts as $font ) {
 
 					$id = $font[ 'slug' ];

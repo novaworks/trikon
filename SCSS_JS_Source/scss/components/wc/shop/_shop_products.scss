@@ -168,9 +168,6 @@ ul.products {
       .product-item__description--actions .button {
         opacity: 0 !important;
         transform: translate3d(0, 15px, 0);
-        span.text {
-          display: none;
-        }
         .trikon-addtocart {
           width: 18px;
           height: 18px;
@@ -187,6 +184,14 @@ ul.products {
 
       .product-item__description--actions .button {
         transition: all 0.45s ease-in-out;
+        width: auto !important;
+        min-width: 140px;
+        padding: 0 rem-calc(15);
+        .text {
+          margin-left: rem-calc(5);
+          font-size: 12px;
+          font-weight: 500;
+        }
       }
 
       .nova_product_quick_view_btn {
@@ -284,7 +289,7 @@ ul.products {
           position: relative;
           pointer-events: auto;
           margin-bottom: rem-calc(15);
-          border-radius: 50%;
+          border-radius: 5px;
 
           &.clicked {
             &:after {
@@ -396,7 +401,6 @@ ul.products {
       }
       .woocommerce-loop-product__title {
         @include product_title(14, 5, v(site-main-font), 400);
-        text-transform: uppercase;
         &:hover {
           color: v(site-accent-color);
         }

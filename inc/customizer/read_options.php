@@ -60,7 +60,7 @@
 				'header_cart_action' 							=> 'mini-cart',
 				'main_menu_background_color'			=> '#FFF',
 				'main_menu_font_color'						=> '#777',
-				'main_menu_accent_color'					=> '#6F4A32',
+				'main_menu_accent_color'					=> '#000000',
 				'main_menu_border_color'					=> '#DEDEDE',
 				'dropdowns_bg_color'         			=> '#fff',
 				'dropdowns_font_color'       			=> '#616161',
@@ -82,21 +82,21 @@
 				'field_radius' 							=> '0',
 
 				// Fonts
-				'font_size' 							=> '16',
+				'font_size' 							=> '14',
 				'secondary_font_weight' 	=> '400',
-				'main_font' 							=> array('font-family' => 'Jost',  'variant' => '400', 'subsets' => array('latin')),
-				'secondary_font' 						=> array('font-family' => 'Gilda Display', 'variant' => '400', 'subsets' => array('latin')),
+				'main_font' 							=> array('font-family' => 'Poppins',  'variant' => '400', 'subsets' => array('latin')),
+				'secondary_font' 						=> array('font-family' => 'kudryashev-d-contrast', 'variant' => '400', 'subsets' => array('latin')),
 
 				// Content Styling
 				'primary_color'             	=> '#777777',
-				'secondary_color'           	=> '#212121',
-				'accent_color' 								=> '#6F4A32',
+				'secondary_color'           	=> '#222222',
+				'accent_color' 								=> '#000000',
 				'accent_color_2' 							=> '#d9f293',
 				'border_color' 								=> '#E2E1E4',
-				'site_link_color'							=> '#212121',
-				'site_link_hover_color'				=> '#6F4A32',
-				'primary_button_color'				=> '#6F4A32',
-				'secondary_button_color'			=> '#212121',
+				'site_link_color'							=> '#222222',
+				'site_link_hover_color'				=> '#000000',
+				'primary_button_color'				=> '#000000',
+				'secondary_button_color'			=> '#222222',
 
 				//Blog Styling
 				'blog_background_color'				=> '#F6F6F6',

@@ -193,19 +193,21 @@
         margin-top: 30px;
     }
 		.nova_new_product {
-			@include product_badge(8px,10px,5px,10px);
+			@include product_badge(6px,10px,6px,10px);
       top: 0;
       left: 0;
 			background-color: v(site-accent-color);
 			color: $content-background;
+      border-radius: 5px;
 		}
 
 		.onsale {
-			@include product_badge(8px,10px,3px,10px);
+			@include product_badge(6px,10px,6px,10px);
       top: 0;
       left: 0;
 			background-color: $content-background;
 			color: v(site-heading-color);
+      border-radius: 5px;
 		}
 	}
 }
