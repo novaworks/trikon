@@ -3,8 +3,6 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding-bottom: rem-calc(15);
-  border-bottom: solid 1px v(site-border-color);
   margin-bottom: rem-calc(40);
   @include breakpoint(small only) {
     display: block;
@@ -70,6 +68,11 @@
       @include breakpoint(large) {
         flex: inherit;
       }
+      .woocommerce-ordering {
+        border: solid 1px v(site-border-color);
+        padding: 0 rem-calc(15);
+        border-radius: 30px;
+      }
       .nova-product-filter {
         display: none;
         align-items: center;
@@ -98,9 +101,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        padding-right: rem-calc(20);
         margin-right: rem-calc(20);
-        border-right: solid 1px v(site-border-color);
         @include breakpoint(468px down) {
           display: none;
         }
@@ -192,8 +193,6 @@
           }
 
           &.select2-container--open {
-            background: v(site-accent-color);
-            color: #FFFFFF;
             .select2-selection__rendered:after {
               transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
             }
@@ -222,12 +221,18 @@
         .shop-display-list {
           display: flex;
           align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          border: solid 1px v(site-border-color);
+          border-radius: 50%;
           cursor: pointer;
           @include global-transition();
 
 
           &.active {
-            color: v(site-secondary-button-color);
+            background-color: v(site-accent-color);
+            color: #fff;
           }
 
           svg.trikon-grid-icon {

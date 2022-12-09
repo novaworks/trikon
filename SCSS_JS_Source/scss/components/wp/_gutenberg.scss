@@ -260,30 +260,14 @@ blockquote.wp-block-quote {
   }
 }
 blockquote.wp-block-quote {
-  background: v(blog-cat-bg);
-  padding: rem-calc(150) rem-calc(60) rem-calc(60) rem-calc(60);
+  padding: rem-calc(60) rem-calc(60) rem-calc(60) rem-calc(60);
   font-size: rem-calc(18);
   text-align: left;
-  border: 0;
-
-  &:before {
-    @include nova_icon('\ea3c');
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    color: v(site-heading-color);
-    font-size: 36px;
-    width: 70px;
-    height: 70px;
-    top: 60px;
-    left: calc(50% - 35px);
-    border-radius: 50%;
-  }
+  border: solid 1px v(site-border-color);
   p {
     font-style: rem-calc(24);
     font-weight: 300;
+    font-style: italic;
     line-height: rem-calc(36) !important;
     margin-bottom: rem-calc(15);
     color: v(site-heading-color);
@@ -296,6 +280,9 @@ blockquote.wp-block-quote {
     font-size: $cite-font-size;
     font-family: v(site-main-font);
     text-transform: uppercase;
+    &:before {
+      display: none;
+    }
   }
 }
 

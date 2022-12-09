@@ -66,6 +66,38 @@
         }
       }
     }
+    .meta-right {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      &__post-date {
+        display: flex;
+        align-items: center;
+        .post-date-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          height: 30px;
+          border: solid 1px v(site-border-color);
+          margin-right: rem-calc(10);
+          border-radius: 50%;
+
+          svg.icon-calendar-svg {
+            width: 12px;
+            height: 14px;
+            color: v(site-heading-color);
+          }
+        }
+      }
+      .nova-sharing-posts {
+        display: none;
+        @include breakpoint( medium  ) {
+          display: flex;
+        }
+        margin-left: rem-calc(20);
+      }
+    }
   }
 }
 

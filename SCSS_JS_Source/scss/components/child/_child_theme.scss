@@ -1,4 +1,4 @@
-body:not(.body-completely-loaded) {
+body:not(.elementor-editor-active):not(.body-completely-loaded) {
   .off-canvas-wrapper,
   .elementor-kitify-nova-menu,
   .sub-menu,
@@ -6,6 +6,7 @@ body:not(.body-completely-loaded) {
   .kitify-nova-menu__mobile-trigger,
   .count-badge,
   .count-text,
+  .kitify-carousel,
   img.kitify-logo__img.kitify-logo-light,
   .elementor-location-footer {
     content-visibility: hidden;
@@ -20,7 +21,7 @@ body:not(.body-completely-loaded) {
   }
 }
 @media(max-width: 882px){
-  body:not(.body-loaded) .elementor-kitify-nova-menu {
+  body:not(.elementor-editor-active):not(.body-completely-loaded) .elementor-kitify-nova-menu {
     display: none;
   }
 }

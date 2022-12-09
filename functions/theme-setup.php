@@ -31,6 +31,7 @@ if ( ! function_exists( 'nova_theme_setup' ) ) :
 				'kitify'    => true,
 				'kitify-woo' => [
 					'product-loop'    			=> true,
+					'stock-progress-bar'    => true,
 				],
 				'elementor'       => [
 						'ajax-templates'    			=> false,
@@ -64,7 +65,7 @@ if ( ! function_exists( 'nova_theme_setup' ) ) :
 			'caption',
 		));
 		//Image size
-		add_image_size( 'nova-imgage-square', 700, 700, true );
+		add_image_size( 'nova-image-square', 1100, 1100, true );
 		//Kitify
 		$kitsetting = get_option('kitify-settings', []);
 		if(empty($kitsetting)){

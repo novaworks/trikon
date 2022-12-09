@@ -25,28 +25,28 @@
 
     a {
       font-size: rem-calc(12);
-      text-transform: uppercase;
+      line-height: rem-calc(30);
+      padding: 0 rem-calc(15);
+      border: solid 1px v(site-border-color);
+      border-radius: 3px;
       &:not(:last-child) {
         position: relative;
-        padding-right: 24px;
-        &:after {
-          content: "";
-          position: absolute;
-          top: 7px;
-          right: 8px;
-          width: 8px;
-          height: 1px;
-          display: inline-block;
-          background: v(site-accent-color);
-        }
+        margin-right: rem-calc(10);
+      }
+      &:hover {
+        background: v(site-accent-color);
+        color: #fff;
+        border-color: v(site-accent-color);
       }
     }
   }
   .entry-title {
-    font-size: rem-calc(38);
+    font-size: rem-calc(48);
+    line-height: 1;
     margin-bottom: rem-calc(10);
     @include breakpoint (medium down) {
-      font-size: rem-calc(26);
+      font-size: rem-calc(32);
+      line-height: 1.2;
     }
   }
   .entry-featured-img {

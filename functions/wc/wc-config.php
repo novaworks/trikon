@@ -13,6 +13,7 @@ if( ! function_exists( 'nova_add_product_thumbnails_start' ) ) {
 	}
 	add_action( 'nova_loop_thumbnail_start', 'nova_add_product_thumbnails_start' );
 }
+
 if( ! function_exists( 'nova_add_product_thumbnails_end' ) ) {
 	function nova_add_product_thumbnails_end(){
 			echo '</div>';
@@ -167,3 +168,14 @@ function kitify_setup_toolbar(){
     }
 }
 endif;
+
+if( ! function_exists( 'nova_add_product_stock_bar' ) ) {
+	function nova_add_product_stock_bar(){
+			$enable = wc_get_loop_prop('kitify_enable_stock_progress_bar', false);
+			$class = '';
+			if( $enable ) {
+				nova_stock_progress_bar();
+			}
+	}
+	add_action( 'woocommerce_after_shop_loop_item_title', 'nova_add_product_stock_bar', 15 );
+}

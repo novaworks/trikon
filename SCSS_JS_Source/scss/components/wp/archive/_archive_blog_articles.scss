@@ -57,9 +57,31 @@ article {
   &.post {
 
     .entry-thumbnail {
-      margin-bottom: rem-calc(16);
-      a {
+      position: relative;
+      margin-bottom: rem-calc(40);
+      .post-thumbnail a {
         display: block;
+      }
+      .entry-meta__cat {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: none;
+        @include breakpoint( medium  ) {
+          display: flex;
+        }
+        a {
+          background: #ffff;
+          line-height: 30px;
+          font-size: rem-calc(14);
+          padding: 0 rem-calc(15);
+          margin-right: rem-calc(8);
+          border-radius: 3px;
+          &:hover {
+            background: v(site-accent-color);
+            color: #fff;
+          }
+        }
       }
     }
 
@@ -70,13 +92,15 @@ article {
           font-size: rem-calc(24);
           margin-bottom: rem-calc(12);
           @include breakpoint( large  ) {
-            font-size: rem-calc(32);
+            font-size: rem-calc(40);
           }
         }
       }
       .entry-content {
         font-size: rem-calc(16);
         line-height: rem-calc(26);
+        padding-bottom: rem-calc(30);
+        border-bottom: solid 1px v(site-border-color);
         p {
           font-size: rem-calc(16);
           line-height: rem-calc(26);

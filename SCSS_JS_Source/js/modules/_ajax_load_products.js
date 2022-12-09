@@ -9,6 +9,8 @@ jQuery(function($) {
 	var ajax_button_class 	= ".products_ajax_button";
 	var ajax_loader_class 	= ".products_ajax_loader";
 	var loadmore_text = nova_js_var.load_more_btn;
+	var $scope = $('.kitify_wc_widget_current_query');
+	var $container = $scope.find('.kitify-masonry-wrapper').first();
 
 	var ajax_load_items = {
 
@@ -47,7 +49,6 @@ jQuery(function($) {
 		                        $(listing_class).append($(this));
 
 		                    });
-
 		                    $(ajax_button_class).attr('data-processing', 0).removeClass('loading');
 
 		                    ajax_load_items.onfinish();
@@ -98,7 +99,7 @@ jQuery(function($) {
 	    },
 
 	    onfinish: function() {
-				
+
 	    },
 
 	    msieversion: function() {

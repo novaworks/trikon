@@ -54,6 +54,12 @@ ul.products {
                 margin-bottom: 0;
               }
             }
+            .price {
+              text-align: center;
+              @include breakpoint(large) {
+                text-align: right;
+              }
+            }
             .price > .woocommerce-Price-amount {
               @include breakpoint(large) {
                 display: inline-block;

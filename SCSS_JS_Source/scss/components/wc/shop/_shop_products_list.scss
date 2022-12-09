@@ -17,6 +17,9 @@ body ul.products.product-list-display {
         display: flex;
       }
       &__thumbnail {
+        .product-item__thumbnail_overlay {
+          display: none;
+        }
         @include breakpoint(medium) {
           position: static !important;
           width: 25%;
@@ -84,15 +87,10 @@ body ul.products.product-list-display {
             order: 1;
             text-align: left !important;
             width: 100% !important;
-            a.title .woocommerce-loop-product__title {
-              @include breakpoint(medium up) {
-                font-size: rem-calc(18) !important;
-                font-weight: 600 !important;
-              }
-            }
           }
           .info-right {
             display: flex;
+            flex-direction: column;
             order: 4;
             text-align: left !important;
             margin-top: rem-calc(12);

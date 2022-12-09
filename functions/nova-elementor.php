@@ -151,6 +151,24 @@ if(!function_exists('trikon_kitify_add_tabs_preset')){
     }
 }
 
+add_filter('kitify/testimonials/control/preset', 'trikon_kitify_add_testimonials_preset');
+if(!function_exists('trikon_kitify_add_testimonials_preset')){
+    function trikon_kitify_add_testimonials_preset(){
+        return [
+          'trikon' => esc_html__( 'Trikon Default', 'kitify' ),
+          'type-1' => esc_html__( 'Type 1', 'kitify' ),
+          'type-2' => esc_html__( 'Type 2', 'kitify' ),
+          'type-3' => esc_html__( 'Type 3', 'kitify' ),
+          'type-4' => esc_html__( 'Type 4', 'kitify' ),
+          'type-5' => esc_html__( 'Type 5', 'kitify' ),
+          'type-6' => esc_html__( 'Type 6', 'kitify' ),
+          'type-7' => esc_html__( 'Type 7', 'kitify' ),
+          'type-8' => esc_html__( 'Type 8', 'kitify' ),
+          'type-9' => esc_html__( 'Type 9', 'kitify' ),
+        ];
+    }
+}
+
 add_filter('kitify/products/box_selector', 'trikon_kitify_product_change_box_selector');
 if(!function_exists('trikon_kitify_product_change_box_selector')){
     function trikon_kitify_product_change_box_selector(){

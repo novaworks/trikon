@@ -82,7 +82,7 @@
 				'field_radius' 							=> '0',
 
 				// Fonts
-				'font_size' 							=> '14',
+				'font_size' 							=> '16',
 				'secondary_font_weight' 	=> '400',
 				'main_font' 							=> array('font-family' => 'Poppins',  'variant' => '400', 'subsets' => array('latin')),
 				'secondary_font' 						=> array('font-family' => 'kudryashev-d-contrast', 'variant' => '400', 'subsets' => array('latin')),

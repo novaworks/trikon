@@ -37,11 +37,26 @@
 					<figure>
 						<?php echo get_avatar( get_the_author_meta( 'ID' ), 80 ); ?>
 					</figure>
-					<span><?php echo get_the_author_meta( 'nickname' ) ?></span>
+					<span><?php echo get_the_author_meta( 'display_name' ) ?></span>
 				</a>
-				<div class="dot"></div>
-				<?php echo nova_posted_on(); ?>
-		</div>
+				<div class="meta-right">
+					<div class="meta-right__post-date">
+						<div class="post-date-icon">
+							<svg class="icon-calendar-svg">
+						  <use xlink:href="#trikon-calendar"></use>
+						</svg>
+						</div>
+						<?php echo nova_posted_on(); ?>
+					</div>
+						<?php
+						if( 1 == Nova_OP::getOption('blog_single_social_share') ):
+							echo '<div class="nova-sharing-posts">';
+							nova_social_sharing(get_the_permalink(), get_the_title(), (has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : ''));
+							echo '</div>';
+						endif;
+					?>
+				</div>
+			</div>
 	</header><!-- .entry-header -->
 
 	<div class="grid-x">
@@ -68,13 +83,6 @@
 								<?php the_tags('', '', ''); ?>
 							</div>
 						</div>
-					<?php endif?>
-					<?php if( 1 == Nova_OP::getOption('blog_single_social_share') ):?>
-						<?php
-						echo '<div class="nova-sharing-single-posts">';
-						nova_social_sharing(get_the_permalink(), get_the_title(), (has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : ''));
-						echo '</div>';
-					?>
 					<?php endif?>
 					</div>
 

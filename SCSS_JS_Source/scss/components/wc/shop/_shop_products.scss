@@ -31,7 +31,7 @@ body.woocommerce section:not(.kitify-products__list_wrapper) > ul.products,
     .woocommerce-loop-product__title {
       font-size: rem-calc(16);
       font-weight: 400;
-      text-align: center;
+      text-align: left;
       margin-bottom: rem-calc(8);
     }
     .product-item__description--button {
@@ -51,7 +51,7 @@ body.woocommerce section:not(.kitify-products__list_wrapper) > ul.products,
     }
 
     span.price {
-      text-align: center;
+      text-align: left;
       @include product_price(16, 0,500);
       color: v(site-wc-price);
       display: block;
@@ -185,11 +185,11 @@ ul.products {
       .product-item__description--actions .button {
         transition: all 0.45s ease-in-out;
         width: auto !important;
-        min-width: 140px;
+        min-width: 145px;
         padding: 0 rem-calc(15);
         .text {
           margin-left: rem-calc(5);
-          font-size: 12px;
+          font-size: rem-calc(12);
           font-weight: 500;
         }
       }
@@ -341,13 +341,13 @@ ul.products {
           .info-left {
             display: flex;
             width: 100%;
-            text-align: center;
+            text-align: left;
             flex-direction: column;
             margin-bottom: rem-calc(0);
           }
 
           .info-right {
-            text-align: center;
+            text-align: left;
           }
           .product-short-description {
             display: none;
@@ -361,7 +361,7 @@ ul.products {
           }
 
           span.price {
-            @include product_price(14, 0,500);
+            @include product_price(14, 0,600);
             color: v(site-wc-price);
             display: block;
           }

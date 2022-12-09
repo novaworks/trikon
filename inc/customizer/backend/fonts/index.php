@@ -32,7 +32,7 @@ Kirki::add_field( 'trikon', array(
     'label'       => esc_html__( 'Base Font Size', 'trikon' ),
     'description' => esc_html__( 'The Base Font Size refers to the size applied to the paragraph text. All other elements, such as headings, links, buttons, etc will adjusted automatically to keep the hierarchy of font sizes based on this one size. Easy-peasy!', 'trikon' ),
     'section'     => $section,
-    'default'     => 14,
+    'default'     => 16,
     'priority'    => 10,
     'choices'     => array(
         'min'  => 12,
