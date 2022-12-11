@@ -30,6 +30,7 @@ class Foundation_Dropdown_Menu_Walker extends Walker_Nav_Menu
 	    	$this->noIDS[] = $item->ID;
 	    	return;
   		}
+			return;
 		parent::start_el($output, $item, $depth, $args, $id);
 	}
 }
@@ -69,8 +70,8 @@ class Foundation_Drilldown_Menu_Walker extends Walker_Nav_Menu
     function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
     	$this->curItem = $item;
     	if ( Nova_OP::getOption('enable_megamenu_' . $item->ID, 0) == true) {
-			$this->noIDS[] = $item->ID;
-		}
+				$this->noIDS[] = $item->ID;
+			}
 	    if ( (Nova_OP::getOption('enable_megamenu_' . $item->menu_item_parent, 0) == true) || ( in_array($item->menu_item_parent, $this->noIDS))) {
 	    	$this->noIDS[] = $item->ID;
 	    	return;
