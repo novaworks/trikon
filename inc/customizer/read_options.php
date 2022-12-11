@@ -59,7 +59,7 @@
 				'header_cart' 										=> 1,
 				'header_cart_action' 							=> 'mini-cart',
 				'main_menu_background_color'			=> '#FFF',
-				'main_menu_font_color'						=> '#777',
+				'main_menu_font_color'						=> '#222',
 				'main_menu_accent_color'					=> '#000000',
 				'main_menu_border_color'					=> '#DEDEDE',
 				'dropdowns_bg_color'         			=> '#fff',

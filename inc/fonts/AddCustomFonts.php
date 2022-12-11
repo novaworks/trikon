@@ -40,7 +40,9 @@ if ( ! class_exists( 'NovaThemesAddCustomFonts' ) ) {
 		 * Typekit fonts
 		 */
 		public function typekit_fonts( $fonts ) {
-
+			if(!get_option( 'kitify-typekit-fonts' )) {
+				return;
+			}
 			$typekit_fonts = get_option( 'kitify-typekit-fonts' )[ 'custom-typekit-font-details' ];
 
 			if ( ! empty( $typekit_fonts ) ) {

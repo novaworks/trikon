@@ -473,9 +473,9 @@ if( !function_exists('nova_gallery_image_size_large')  ) {
  			woocommerce_wp_text_input(
  				array(
  					'id'          => 'nova_total_stock_quantity',
- 					'label'       => esc_html__( 'Initial number in stock', 'nova' ),
+ 					'label'       => esc_html__( 'Initial number in stock', 'trikon' ),
  					'desc_tip'    => 'true',
- 					'description' => esc_html__( 'Required for stock progress bar option', 'nova' ),
+ 					'description' => esc_html__( 'Required for stock progress bar option', 'trikon' ),
  					'type'        => 'text',
  				)
  			);

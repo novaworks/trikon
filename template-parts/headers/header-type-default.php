@@ -79,6 +79,7 @@ if('on' == Nova_OP::getOption('header_wide')) {
 								<svg class="svg-icon svg-menu-search">
 								 <use xlink:href="#trikon-search"></use>
 								</svg>
+								<span><?php esc_html_e( 'Search', 'trikon' ); ?></span>
 							</a>
 						</li>
 					<?php endif; ?>

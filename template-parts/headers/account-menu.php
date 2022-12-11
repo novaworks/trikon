@@ -5,6 +5,7 @@
         <svg class="svg-icon">
          <use xlink:href="#trikon-menu-user"></use>
         </svg>
+        <span><?php esc_html_e( 'My account', 'trikon' ); ?></span>
       </a>
       <ul class="sub-menu">
       <?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>

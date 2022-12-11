@@ -26,7 +26,7 @@ Kirki::add_field( 'trikon', array(
     'settings'    => 'main_menu_font_color',
     'label'       => esc_html__( 'Text Color', 'trikon' ),
     'section'     => $section,
-    'default'     => '#777',
+    'default'     => '#222',
     'priority'    => 10,
 
 ) );
