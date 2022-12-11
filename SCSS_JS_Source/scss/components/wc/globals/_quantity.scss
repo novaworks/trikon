@@ -26,16 +26,17 @@ form.cart
 		.qty-button {
 			position: absolute;
 			top: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			width: 38px;
-			height: 50px;
+			height: 100%;
 			font-size: 0;
-			line-height: 50px;
 			text-align: center;
 			cursor: pointer;
 			&.dec {
 				&:after {
 					position: relative;
-					top: 5px;
 					@include nova_icon('\ea06');
 					font-size: rem-calc(14);
 					color: v(site-heading-color);
@@ -46,7 +47,6 @@ form.cart
 				left: auto;
 				&:after {
 					position: relative;
-					top: 5px;
 					@include nova_icon('\ea05');
 					font-size: rem-calc(16);
 					color: v(site-heading-color);

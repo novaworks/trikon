@@ -98,13 +98,6 @@ function trikon_theme_register_required_plugins() {
       'description'        => esc_html__('Beautiful colors, images and buttons variation swatches for woocommerce product attributes. Requires WooCommerce 3.2+','trikon'),
       'demo_required'      => true
     ),
-    'contact-form-7' => array(
-      'name'               => esc_html__('Contact Form 7','trikon'),
-      'slug'               => 'contact-form-7',
-      'required'           => false,
-      'description'        => esc_html__('Just another contact form plugin. Simple but flexible.','trikon'),
-      'demo_required'      => true
-    ),
   );
 
 	$config = array(

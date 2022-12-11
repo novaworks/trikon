@@ -331,7 +331,6 @@
 	margin-right: auto;
 	padding: 0 20px;
 }
-
 .main-navigation .mega-menu-container:before {
 	content: "";
 	display: table;
@@ -380,7 +379,6 @@
 	font-weight: 500;
 	color: v(site-heading-color);
 	display: block;
-	text-transform: uppercase;
 }
 
 .main-navigation .container-fluid .mega-menu-main {
@@ -404,7 +402,6 @@
 	padding: 40px;
 	&:not(:last-child) {
 		background: #fff;
-		border-right: solid 1px v(site-border-color);
 	}
 	> a {
 		display: inline-block;
@@ -413,4 +410,7 @@
 			display: none;
 		}
 	}
+}
+.nav-menu ul.mega-menu .no-spacing ul.mega-menu-main > li {
+	padding: 0;
 }
