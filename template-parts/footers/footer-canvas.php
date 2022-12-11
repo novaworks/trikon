@@ -2,6 +2,21 @@
 		<div class="off-canvas-wrapper">
 				<?php do_action( 'kitify/theme/canvas_panel' ); ?>
 				<?php if ( NOVA_WOOCOMMERCE_IS_ACTIVE ) : ?>
+				  <?php if (!is_user_logged_in() ) : ?>
+				    <div class="kitify-offcanvas login-canvas site-canvas-menu off-canvas position-right" id="AcccountCanvas_Popup" data-off-canvas data-transition="overlap">
+				      <div class="kitify-offcanvas__content nova_box_ps">
+				        <?php wc_get_template( 'myaccount/form-login.php', array( 'is_popup' => true ) ); ?>
+				      </div>
+				      <button class="close-button" aria-label="Close menu" type="button" data-close>
+				        <svg class="nova-close-canvas">
+				          <use xlink:href="#nova-close-canvas"></use>
+				        </svg>
+				      </button>
+				    </div>
+				  <?php endif; ?>
+				<?php endif; ?>
+
+				<?php if ( NOVA_WOOCOMMERCE_IS_ACTIVE ) : ?>
 					<?php if ( !nova_elementor_has_location( 'header' ) && Nova_OP::getOption('header_cart') == 1 &&  Nova_OP::getOption('header_cart_action') == 'mini-cart') : ?>
 						<div class="nova-offcanvas minicart-canvas site-canvas-menu off-canvas position-right" id="MiniCartCanvas" data-off-canvas data-transition="overlap">
 							<h2 class="title"><?php echo esc_html__( 'Shopping Cart', 'trikon' );?><span class="nova_js_count_bag_item_canvas count-item-canvas"><?php echo esc_html(WC()->cart->get_cart_contents_count()); ?></span></h2>
