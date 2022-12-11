@@ -68,3 +68,10 @@ endif;
 // Disable Wishlist Responsive
 // -----------------------------------------------------------------------------
 add_filter( 'yith_wcwl_is_wishlist_responsive', '__return_false' );
+// -----------------------------------------------------------------------------
+// Remove menu item id
+// -----------------------------------------------------------------------------
+add_filter('nav_menu_item_id', 'nova_css_attributes_filter', 100, 1);
+function nova_css_attributes_filter($var) {
+  return is_array($var) ? array_intersect($var, array('current-menu-item')) : '';
+}
