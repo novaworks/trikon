@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer sticky-footer">
 	<div class="nova-footer footer-type-1">
 
 		<div class="row small-collapse">
