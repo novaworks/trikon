@@ -22,24 +22,15 @@ function trikon_theme_register_required_plugins() {
       'demo_required'      => true,
       'version'            => '1.0.4.4'
     ),
-    // 'novawrs-pagespeed' => array(
-    //   'name'               => esc_html__('Novaworks PageSpeed','trikon'),
-    //   'slug'               => 'novawrs-pagespeed',
-    //   'source'             => 'http://assets.novaworks.net/plugins/novawrs-pagespeed-v1.0.0.zip',
-    //   'required'           => true,
-    //   'description'        => esc_html__(' Novaworks PageSpeed eliminate render-blocking Javascript. This gives 2x-5x increase in page load speed, as well as in relevant Google page speed metrics. And this plugin improves your page speed, even on top of your existing optimizations','trikon'),
-    //   'demo_required'      => false,
-    //   'version'            => '1.0.0'
-    // ),
-    // 'demo-importer' => array(
-    //   'name'               => esc_html__('trikon Package Demo Data','trikon'),
-    //   'slug'               => 'trikon-demo-data',
-    //   'source'             => 'http://assets.novaworks.net/plugins/trikon/trikon-demo-data.zip',
-    //   'required'           => false,
-    //   'description'        => esc_html__('This plugin use only for Novaworks Theme.','trikon'),
-    //   'demo_required'      => true,
-    //   'version'            => '1.0.1'
-    // ),
+    'novawrs-pagespeed' => array(
+      'name'               => esc_html__('Novaworks PageSpeed','trikon'),
+      'slug'               => 'novawrs-pagespeed',
+      'source'             => 'http://assets.novaworks.net/plugins/novawrs-pagespeed-v1.0.0.zip',
+      'required'           => true,
+      'description'        => esc_html__(' Novaworks PageSpeed eliminate render-blocking Javascript. This gives 2x-5x increase in page load speed, as well as in relevant Google page speed metrics. And this plugin improves your page speed, even on top of your existing optimizations','trikon'),
+      'demo_required'      => false,
+      'version'            => '1.0.0'
+    ),
     'wc-ajax-product-filter' => array(
       'name'               => esc_html__('Nova Ajax Product Filters','trikon'),
       'slug'               => 'nova-ajax-product-filter',

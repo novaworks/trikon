@@ -3,6 +3,13 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
+add_filter('kitify/adobe_fonts/id', 'trikon_kitify_adobe_fonts_id');
+if(!function_exists('trikon_kitify_adobe_fonts_id')){
+    function trikon_kitify_adobe_fonts_id(){
+        return 'iiu0lcg';
+    }
+}
+
 add_filter('kitify/logo/attr/src', 'trikon_kitify_logo_attr_src');
 if(!function_exists('trikon_kitify_logo_attr_src')){
     function trikon_kitify_logo_attr_src( $src ){
