@@ -31,6 +31,15 @@ function trikon_theme_register_required_plugins() {
       'demo_required'      => false,
       'version'            => '1.0.0'
     ),
+    'demo-importer' => array(
+      'name'               => esc_html__('Trikon Package Demo Data','trikon'),
+      'slug'               => 'trikon-demo-data',
+      'source'             => 'http://assets.novaworks.net/plugins/trikon/trikon-demo-data.zip',
+      'required'           => false,
+      'description'        => esc_html__('This plugin use only for Novaworks Theme.','trikon'),
+      'demo_required'      => true,
+      'version'            => '1.0.0'
+    ),
     'wc-ajax-product-filter' => array(
       'name'               => esc_html__('Nova Ajax Product Filters','trikon'),
       'slug'               => 'nova-ajax-product-filter',

@@ -1,5 +1,5 @@
 Theme Name: Trikon
-Theme URI: http://trikon.novaworks.net/
+Theme URI: http://trikon.demo4wp.com/
 Author: Novaworks
 Author URI: https://www.novaworks.net/
 Description: Trikon is a fully responsive Premium WordPress Theme with a pixel perfect design and extensive functionality.

@@ -7,7 +7,7 @@
     transform: scale(1);
   }
 }
-
+html:not(.touchevents) ul.products,
 ul.products:not(.swiper-wrapper) {
   li.product {
     opacity: 0;
