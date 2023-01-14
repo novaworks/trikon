@@ -40,8 +40,12 @@ if ( ! empty( $tabs ) ) : ?>
 		<?php $j = 0 ?>
 		<?php foreach ( $tabs as $key => $tab ) : ?>
 	  <div class="tabs-panel<?php if($j == 0):?> is-active<?php endif ?>" id="panel_<?php echo esc_attr( $key ); ?>">
-	    <?php call_user_func( $tab['callback'], $key, $tab ); ?>
-	  </div>
+			<?php
+			if ( isset( $tab['callback'] ) ) {
+				call_user_func( $tab['callback'], $key, $tab );
+			}
+			?>
+		</div>
 		<?php $j ++ ?>
 		<?php endforeach; ?>
 		<?php do_action( 'woocommerce_product_after_tabs' ); ?>
